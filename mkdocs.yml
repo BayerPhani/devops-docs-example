@@ -1,0 +1,10 @@
+site_name: Example via GitHub Actions
+theme:
+  name: 'material'
+  palette:
+    primary: grey
+
+plugins:
+  - search:
+  - git-revision-date-localized:
+      fallback_to_build_date: true

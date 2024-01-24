@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "devops-docs-example"
+version = "1.0.0"
+description = "Example on how to generate documentation and push it to devops-docs"
+
+authors = [
+    "Tim Jonas Meinerzhagen <tim.meinerzhagen@bayer.com>"
+]
+
+readme = 'README.md'
+
+repository = "https://github.com/bayer-int/devops-docs-example"
+homepage = "https://docs.int.bayer.com/-/devops-docs-example/"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.5.3"
+mkdocs-git-revision-date-localized-plugin = "^1.2"
+
+[build.system]
+requires = ["poetry-core>=1.0.0"]
+
