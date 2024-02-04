@@ -125,10 +125,10 @@ The options for CRV_CHECK are provided to the macro through parameters. For a sp
 | [REPORT_TYPE]     | HTML           | Store the result files in RTF or HTML (default)  format, or ALL to produce both files     |
 |                   |                |                                                                          |
 | [COLORS]          | #ff4d4d\|#dbb43d | Color to use for flagged records in reports                            |
-|                   |                  |                                                                        |
 |                   |                  | 1st color in the list is used for the failed checks.                   |
-|                   |                  |                                                                        |
 |                   |                  | 2nd color in the list is used for the TBD checks.                      |
+|                   |                  |                                                                        |
+|                   |                  |                       |
 |                   |                |                                                                          |
 |                   |                |                                                                          |
 |                   |                |                                                                          |
