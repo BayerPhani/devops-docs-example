@@ -120,7 +120,9 @@ The options for CRV_CHECK are provided to the macro through parameters. For a sp
 |                   |                |                                                                          |
 | [CHECK12:]        | Y              | Check for reprots with invalid values                                    |
 |                   |                |                                                                          |
+| [CHECKX:]         | N              | Run study specific check(s)                                              |
 |                   |                |                                                                          |
+| [REPORT_TYPE]     | HTML           | Store the result files in RTF or HTML (default)  format, or ALL to produce both files     |
 |                   |                |                                                                          |
 |                   |                |                                                                          |
 |                   |                |                                                                          |
