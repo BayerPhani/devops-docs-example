@@ -29,7 +29,7 @@ format:
 ---
 
 # CRV Check for discrepancies in CSR tables and listing reports.
-<img src="./images/Picture1.png" alt="CRV Logo" width="200"/>
+<img src="crv_doc/docs/images/Picture1.png" alt="CRV Logo" width="200"/>
 
 
 ## Purpose / Short Description of CRV
