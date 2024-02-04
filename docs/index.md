@@ -28,9 +28,9 @@ format:
     toc-depth: 3
 ---
 
-## Check for discrepancies in CSR tables and listing reports.
+# CRV Check for discrepancies in CSR tables and listing reports.
+<img src="./images/Picture1.png" alt="CRV Logo" width="200"/>
 
-![](image/Picture1.png){fig-align="center" width="412"}
 
 ## Purpose / Short Description of CRV
 
