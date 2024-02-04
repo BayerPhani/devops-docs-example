@@ -69,42 +69,42 @@ Check for discrepancies in CSR tables and listing reports. 
 The options for CRV_CHECK are provided to the macro through parameters. For a specification of the possible parameters and values for the options, refer to the following table. The effect and possible values of the options are described in the respective specifications below. Note that if any of the required parameters is not used appropriately, the macro will terminate with an error message.
 
 |                   |                |                                                                          |                             |
-|-------------------|----------------|--------------------------------------------------------------------------|-----------------------------|
-|                   |                |                                                                          |                             |
-| **Type of check** | **Object**     | **Descriptions**                                                         | **Message / Reaction**      |
-|                   |                |                                                                          |                             |
-| FORMAL            | LIB            | Must be a valid existing library                                         | Abort with an error message |
-|                   |                |                                                                          |                             |
-| FORMAL            | METADATA       | Must be existing dataset(s) (also in combination with INLIB if provided) | Abort with an error message |
-|                   |                |                                                                          |                             |
-| FORMAL            | LIB METADATA   | LIB and METADATA must not be both missing                                | Abort with an error message |
-|                   |                |                                                                          |                             |
-| FORMAL            | REPORT_TYPE    | Must use HTM, RTF or ALL                                                 | Abort with an error message |
-|                   |                |                                                                          |                             |
-| [CHECK1]          | Y              | Check for reports with undefined titles                                  |                             |
-|                   |                |                                                                          |                             |
-| [CHECK2:]         | Y              | Check for missing footnote references                                    |                             |
-|                   |                |                                                                          |                             |
-| [CHECK3:]         | Y              | Check for duplicate records in reports                                   |                             |
-|                   |                |                                                                          |                             |
-| [CHECK4:]         | Y              | Check report creation dates                                              |                             |
-|                   |                |                                                                          |                             |
-| [CHECK5:]         | Y              | Compare program file names against NAME parameter in %iniprog call       |                             |
-|                   |                |                                                                          |                             |
-| [CHECK6:]         | Y              | Check for empty reports                                                  |                             |
-|                   |                |                                                                          |                             |
-| [CHECK7:]         | Y              | Check for missing %iniprog and/or %endprog calls                         |                             |
-|                   |                |                                                                          |                             |
-| [CHECK8:]         | Y              | Check SAS log files                                                      |                             |
-|                   |                |                                                                          |                             |
-| [CHECK9:]         | Y              | Check AE reports for discrepancies                                       |                             |
-|                   |                |                                                                          |                             |
-| [CHECK10:]        | Y              | Check Big N within each population group                                 |                             |
-|                   |                |                                                                          |                             |
-| [CHECK11:]        | Y              | Check for hardcoded libnames and formats                                 |                             |
-|                   |                |                                                                          |                             |
-| [CHECK12:]        | Y              | Check for reprots with invalid values                                    |                             |
-|                   |                |                                                                          |                             |
+|-------------------|----------------|--------------------------------------------------------------------------| 
+|                   |                |                                                                          | 
+| **Parameter**     | **Default**    | **Description**                                                          |
+|                   |                |                                                                          | 
+| [LIB]             | TLFMETA        | Library reference pointing to %datalist metadata                         |
+|                   |                |                                                                          |  
+| [METADATA]        | META           | Metadata dataset(s) for stored %datalist metadata                        |
+|                   |                |                                                                          |  
+| FORMAL            | LIB METADATA   | LIB and METADATA must not be both missing                                |  
+|                   |                |                                                                          |
+| FORMAL            | REPORT_TYPE    | Must use HTM, RTF or ALL                                                 |
+|                   |                |                                                                          |
+| [CHECK1]          | Y              | Check for reports with undefined titles                                  |
+|                   |                |                                                                          |
+| [CHECK2:]         | Y              | Check for missing footnote references                                    |
+|                   |                |                                                                          |
+| [CHECK3:]         | Y              | Check for duplicate records in reports                                   |
+|                   |                |                                                                          |
+| [CHECK4:]         | Y              | Check report creation dates                                              |
+|                   |                |                                                                          |
+| [CHECK5:]         | Y              | Compare program file names against NAME parameter in %iniprog call       |
+|                   |                |                                                                          |
+| [CHECK6:]         | Y              | Check for empty reports                                                  |
+|                   |                |                                                                          |
+| [CHECK7:]         | Y              | Check for missing %iniprog and/or %endprog calls                         |
+|                   |                |                                                                          |
+| [CHECK8:]         | Y              | Check SAS log files                                                      |
+|                   |                |                                                                          |
+| [CHECK9:]         | Y              | Check AE reports for discrepancies                                       |
+|                   |                |                                                                          |
+| [CHECK10:]        | Y              | Check Big N within each population group                                 |
+|                   |                |                                                                          |
+| [CHECK11:]        | Y              | Check for hardcoded libnames and formats                                 |
+|                   |                |                                                                          |
+| [CHECK12:]        | Y              | Check for reprots with invalid values                                    |
+|                   |                |                                                                          |
 
 
  
