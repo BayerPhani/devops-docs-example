@@ -128,13 +128,21 @@ The options for CRV_CHECK are provided to the macro through parameters. For a sp
 |                   |                  | 1st color in the list is used for the failed checks.                   |
 |                   |                  | 2nd color in the list is used for the TBD checks.                      |
 |                   |                  |                                                                        |
-|                   |                  |                       |
+| [KEYWORD]         | UNIDENTIFIED     | Optional text string to identify missing titles                        |
+|                   |                  |                                                                        |
+| [FIRSTOBS]        | 1                | Used to limit the number of reports to check. It specifies first observation to process.  |
 |                   |                |                                                                          |
+| [OBS]             | MAX            | Specifies the last observation to process.                               |
 |                   |                |                                                                          |
+| [SEARCH_COLUMN_HEADER] | Total     | Select a column header to search                                         |
 |                   |                |                                                                          |
+| [TIMING_WINDOW]   | 21600          | Allowed time interval between report creation dates, in seconds; the default is 6 hours   |
 |                   |                |                                                                          |
+| [FILEFILTER]      | .\*            | Filter for file names to include in validation report; must be a valid regular expression |
 |                   |                |                                                                          |
-
+| [HELP]            | N              | Display the CRV help messages                                            |
+|                   |                |                                                                          |
+| [VERBOSE]         | N              | Print additional information into SAS log                                |
 
 
 
