@@ -68,24 +68,6 @@ Check for discrepancies in CSR tables and listing reports. 
 
 The options for CRV_CHECK are provided to the macro through parameters. For a specification of the possible parameters and values for the options, refer to the following table. The effect and possible values of the options are described in the respective specifications below. Note that if any of the required parameters is not used appropriately, the macro will terminate with an error message.
 
-|                   |                |                                                                          |                             |
-|-------------------|----------------|--------------------------------------------------------------------------|-----------------------------|
-|                   |                |                                                                          |                             |
-| **Type of check** | **Object**     | **Descriptions**                                                         | **Message / Reaction**      |
-|                   |                |                                                                          |                             |
-| FORMAL            | LIB            | Must be a valid existing library                                         | Abort with an error message |
-|                   |                |                                                                          |                             |
-| FORMAL            | METADATA       | Must be existing dataset(s) (also in combination with INLIB if provided) | Abort with an error message |
-|                   |                |                                                                          |                             |
-| FORMAL            | LIB METADATA   | LIB and METADATA must not be both missing                                | Abort with an error message |
-|                   |                |                                                                          |                             |
-| FORMAL            | REPORT_TYPE    | Must use HTM, RTF or ALL                                                 | Abort with an error message |
-|                   |                |                                                                          |                             |
-
-
-
-
-
 
 |                   |                |                                                                          |
 |-------------------|----------------|--------------------------------------------------------------------------| 
@@ -144,68 +126,6 @@ The options for CRV_CHECK are provided to the macro through parameters. For a sp
 |                   |                |                                                                          |
 | [VERBOSE]         | N              | Print additional information into SAS log                                |
 
-
-
-
- 
-
-| **Parameter**          | **Default**      | **Description**                                                                           |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [LIB]                  | TLFMETA          | Library reference pointing to %datalist metadata                                          |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [METADATA]             | META             | Metadata dataset(s) for stored %datalist metadata                                         |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [CHECK1]               | Y                | Check for reports with undefined titles                                                   |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [CHECK2:]              | Y                | Check for missing footnote references                                                     |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [CHECK3:]              | Y                | Check for duplicate records in reports                                                    |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [CHECK4:]              | Y                | Check report creation dates                                                               |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [CHECK5:]              | Y                | Compare program file names against NAME parameter in %iniprog call                        |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [CHECK6:]              | Y                | Check for empty reports                                                                   |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [CHECK7:]              | Y                | Check for missing %iniprog and/or %endprog calls                                          |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [CHECK8:]              | Y                | Check SAS log files                                                                       |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [CHECK9:]              | Y                | Check AE reports for discrepancies                                                        |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [CHECK10:]             | Y                | Check Big N within each population group                                                  |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [CHECK11:]             | Y                | Check for hardcoded libnames and formats                                                  |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [CHECK12:]             | Y                | Check for reprots with invalid values                                                     |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [CHECKX:]              | N                | Run study specific check(s)                                                               |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [REPORT_TYPE]          | HTML             | Store the result files in RTF or HTML (default)  format, or ALL to produce both files     |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [COLORS]               | #ff4d4d\|#dbb43d | Color to use for flagged records in reports                                               |
-|                        |                  |                                                                                           |
-|                        |                  | 1st color in the list is used for the failed checks.                                      |
-|                        |                  |                                                                                           |
-|                        |                  | 2nd color in the list is used for the TBD checks.                                         |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [KEYWORD]              | UNIDENTIFIED     | Optional text string to identify missing titles                                           |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [FIRSTOBS]             | 1                | Used to limit the number of reports to check. It specifies first observation to process.  |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [OBS]                  | MAX              | Specifies the last observation to process.                                                |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [SEARCH_COLUMN_HEADER] | Total            | Select a column header to search                                                          |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [TIMING_WINDOW]        | 21600            | Allowed time interval between report creation dates, in seconds; the default is 6 hours   |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [FILEFILTER]           | .\*              | Filter for file names to include in validation report; must be a valid regular expression |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [HELP]                 | N                | Display the CRV help messages                                                             |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
-| [VERBOSE]              | N                | Print additional information into SAS log                                                 |
-+------------------------+------------------+-------------------------------------------------------------------------------------------+
 
 ### LIB
 
