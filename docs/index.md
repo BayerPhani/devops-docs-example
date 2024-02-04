@@ -85,6 +85,8 @@ The options for CRV_CHECK are provided to the macro through parameters. For a sp
 
 
 
+
+
 |                   |                |                                                                          |
 |-------------------|----------------|--------------------------------------------------------------------------| 
 |                   |                |                                                                          | 
@@ -94,10 +96,6 @@ The options for CRV_CHECK are provided to the macro through parameters. For a sp
 |                   |                |                                                                          |  
 | [METADATA]        | META           | Metadata dataset(s) for stored %datalist metadata                        |
 |                   |                |                                                                          |  
-| FORMAL            | LIB METADATA   | LIB and METADATA must not be both missing                                |  
-|                   |                |                                                                          |
-| FORMAL            | REPORT_TYPE    | Must use HTM, RTF or ALL                                                 |
-|                   |                |                                                                          |
 | [CHECK1]          | Y              | Check for reports with undefined titles                                  |
 |                   |                |                                                                          |
 | [CHECK2:]         | Y              | Check for missing footnote references                                    |
@@ -122,6 +120,16 @@ The options for CRV_CHECK are provided to the macro through parameters. For a sp
 |                   |                |                                                                          |
 | [CHECK12:]        | Y              | Check for reprots with invalid values                                    |
 |                   |                |                                                                          |
+|                   |                |                                                                          |
+|                   |                |                                                                          |
+|                   |                |                                                                          |
+|                   |                |                                                                          |
+|                   |                |                                                                          |
+|                   |                |                                                                          |
+|                   |                |                                                                          |
+
+
+
 
 
  
