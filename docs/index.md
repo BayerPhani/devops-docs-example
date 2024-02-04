@@ -81,12 +81,33 @@ The options for CRV_CHECK are provided to the macro through parameters. For a sp
 |                   |                |                                                                          |                             |
 | FORMAL            | REPORT_TYPE    | Must use HTM, RTF or ALL                                                 | Abort with an error message |
 |                   |                |                                                                          |                             |
-
+| [CHECK1]          | Y              | Check for reports with undefined titles                                  |                             |
 |                   |                |                                                                          |                             |
-|-------------------|----------------|--------------------------------------------------------------------------|-----------------------------|
-|                   |                |                                                                                                        |
-| **Parameter**     | **Default**    | **Descriptions**                                                                                       |
+| [CHECK2:]         | Y              | Check for missing footnote references                                    |                             |
+|                   |                |                                                                          |                             |
+| [CHECK3:]         | Y              | Check for duplicate records in reports                                   |                             |
+|                   |                |                                                                          |                             |
+| [CHECK4:]         | Y              | Check report creation dates                                              |                             |
+|                   |                |                                                                          |                             |
+| [CHECK5:]         | Y              | Compare program file names against NAME parameter in %iniprog call       |                             |
+|                   |                |                                                                          |                             |
+| [CHECK6:]         | Y              | Check for empty reports                                                  |                             |
+|                   |                |                                                                          |                             |
+| [CHECK7:]         | Y              | Check for missing %iniprog and/or %endprog calls                         |                             |
+|                   |                |                                                                          |                             |
+| [CHECK8:]         | Y              | Check SAS log files                                                      |                             |
+|                   |                |                                                                          |                             |
+| [CHECK9:]         | Y              | Check AE reports for discrepancies                                       |                             |
+|                   |                |                                                                          |                             |
+| [CHECK10:]        | Y              | Check Big N within each population group                                 |                             |
+|                   |                |                                                                          |                             |
+| [CHECK11:]        | Y              | Check for hardcoded libnames and formats                                 |                             |
+|                   |                |                                                                          |                             |
+| [CHECK12:]        | Y              | Check for reprots with invalid values                                    |                             |
+|                   |                |                                                                          |                             |
 
+
+ 
 
 | **Parameter**          | **Default**      | **Description**                                                                           |
 +------------------------+------------------+-------------------------------------------------------------------------------------------+
