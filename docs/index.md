@@ -68,6 +68,20 @@ Check for discrepancies in CSR tables and listing reports. 
 
 The options for CRV_CHECK are provided to the macro through parameters. For a specification of the possible parameters and values for the options, refer to the following table. The effect and possible values of the options are described in the respective specifications below. Note that if any of the required parameters is not used appropriately, the macro will terminate with an error message.
 
+|                   |                |                                                                          |                             |
+|-------------------|----------------|--------------------------------------------------------------------------|-----------------------------|
+|                   |                |                                                                          |                             |
+| **Type of check** | **Object**     | **Descriptions**                                                         | **Message / Reaction**      |
+|                   |                |                                                                          |                             |
+| FORMAL            | LIB            | Must be a valid existing library                                         | Abort with an error message |
+|                   |                |                                                                          |                             |
+| FORMAL            | METADATA       | Must be existing dataset(s) (also in combination with INLIB if provided) | Abort with an error message |
+|                   |                |                                                                          |                             |
+| FORMAL            | LIB METADATA   | LIB and METADATA must not be both missing                                | Abort with an error message |
+|                   |                |                                                                          |                             |
+| FORMAL            | REPORT_TYPE    | Must use HTM, RTF or ALL                                                 | Abort with an error message |
+|                   |                |                                                                          |                             |
+
 
 | **Parameter**          | **Default**      | **Description**                                                                           |
 +------------------------+------------------+-------------------------------------------------------------------------------------------+
