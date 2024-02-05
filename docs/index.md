@@ -114,7 +114,7 @@ A report is considered having an undefined title if TITLE1 is missing or contain
 
 Sample Detail check for reports with undefined titles:
 
-<img src="./images/Picture4.png)
+<img src="./images/Picture4.png"/>
 
 ### CHECK2:
 
