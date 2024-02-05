@@ -150,7 +150,7 @@ If the gap between report creation date and that of the most recent report is gr
 
 Sample report:
 
-![](image/Picture5.png)
+<img src="./images/Picture5.png"/>
 
 ### CHECK5:
 
@@ -159,7 +159,7 @@ Sample report:
 The report is flagged if NAME parameter in %iniprog call does not match the file name.
 
 Sample report:\
-![](image/Picture6.png)
+<img src="./images/Picture6.png"/>
 
 ### CHECK6:
 
@@ -169,7 +169,7 @@ All reports that contain no data are flagged.
 
 Sample report:
 
-![](image/Picture7.png)
+<img src="./images/Picture7.png"/>
 
 ### CHECK7:
 
@@ -179,7 +179,7 @@ SAS programs are scanned for presence of %iniprog and %endprog calls. Reports th
 
 For Example:
 
-![](image/Picture8.png)
+<img src="./images/Picture8.png"/>
 
 Note: ACL Owner column indicates the Unix ownership of the file. It is the output of the "ls --la" command.
 
@@ -193,7 +193,7 @@ SAS log files are scanned for presence of ERRORs, WARNINGs and critical NOTEs. R
 
 Sample Report:
 
-![](image/Picture9.png)
+<img src="./images/Picture9.png"/>
 
 ### CHECK9:
 
@@ -213,9 +213,9 @@ AE reports are grouped to the following categories:  
 
 Reported numbers between each group has to match.
 
-![](image/Picture10.png)
+<img src="./images/Picture10.png"/>
 
-![](image/Picture11.png)
+<img src="./images/Picture11.png"/>
 
 ### CHECK10:
 
@@ -225,7 +225,7 @@ Check reports for discrepancies in reporting Big N for various populations.  Re
 
 Sample HTML detail report using SAS 9.4:
 
-![](image/Picture12.png){width="561"}
+<img src="./images/Picture12.png" width="561"/>>
 
 ### CHECK11:
 
@@ -235,7 +235,7 @@ Check for hardcoded libnames and formats. SAS programs are scanned for presence 
 
 Sample HTML detail report using SAS 9.4:
 
-![](image/Picture13.png)
+<img src="./images/Picture13.png"/>
 
 ### CHECK12:
 
@@ -247,7 +247,8 @@ For example:
 
             1. Check for UNCODED! fields.
 
-            2. in case Taiwan is used in a Table, the following two checks are applied:             a.) If Country is used, it should always be "Country / Region". This is also required for all titles       and footnotes.\
+            2. in case Taiwan is used in a Table, the following two checks are applied:            
+            a.) If Country is used, it should always be "Country / Region". This is also required for all titles       and footnotes.\
             b.) In no case the term "Province of China" should be used in combination with Taiwan\
             Both checks are required to ensure we apply to all requirements for submissions in China and Taiwan.
 
@@ -255,7 +256,7 @@ For example:
 
 Sample HTML summary report using SAS 9.4:
 
-![](image/Picture14.png)
+<img src="./images/Picture14.png"/>
 
 ### CHECKX:
 
@@ -359,7 +360,7 @@ Example:
 
 Clicking of the "Obs" number, detail report of the selected check will be displayed. Clicking on the "Status" column, summary report of the selected check will be displayed.  
 
-![](image/Picture15.png)
+<img src="./images/Picture15.png"/>
 
 To generate the above report, run the %crv_check macro at the end of your run_all.sas program.
 
@@ -390,10 +391,10 @@ Some checks like check#3, find duplicate records, it totally depends on the repo
 TBD is for those cases where the program cannot figure whether something is correct or not, so they need to be checked visually.
 
 Following is a list of valid status values for each check:\
-![](image/Picture16.png){width="588"}
+<img src="./images/Picture16.png"  width="588"/>
 
 Default colors associated with status values are:\
-![](image/Picture17.png)
+<img src="./images/Picture17.png"  width="588"/>
 
 Within the CRV reports, there are default colors associated with these values: Yellow for "TBD", Orange for "Failed", default SAS background color for "Passed". When running CRV in SAS 9.2, default background color is "Gray". Running it with SAS 9.4, default background color is "White".
 
@@ -424,7 +425,7 @@ Following are the steps for storing the crv_check findings to a MS-Word document
 %DocumentFinish(template=template_CRV_check.doc, tmpldir=&prgdir, \_outdir=&outdir, ResultPrefix= )
 
 Sample CRV_Check.doc file:\
-![](image/Picture18.png)
+<img src="./images/Picture18.png" />
 
 ### 3.Appendix A:
 
