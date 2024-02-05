@@ -1,10 +1,43 @@
-site_name: Example via GitHub Actions
-theme:
-  name: 'material'
-  palette:
-    primary: grey
+# Project information
+site_name: CRV Documentation
+site_description: CRV Documentation
+site_author: Iraj Mohebalian 
+site_url: https://docs.int.bayer.com/crv/
+copyright: Bayer
 
-plugins:
-  - search:
-  - git-revision-date-localized:
-      fallback_to_build_date: true
+# Repository
+repo_name: bayer-int/crv
+repo_url: https://docs.int.bayer.com/crv/
+edit_uri: edit/master/docs
+
+# Configuration
+theme:
+  name: material
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - extra
+  - pymdownx.magiclink
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+
+# Page tree
+nav:
+  - Introduction: index.md
+  - Training Material: trainings.md
+  - Check:
+    - Check1: 
+        - Intro: check1.md
+    
+extra_css:
+  - assets/css/style.css
+extra_javascript:
+  - assets/js/mermaid.min.js
