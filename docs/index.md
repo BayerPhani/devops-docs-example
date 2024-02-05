@@ -1,24 +1,6 @@
  # CRV Check for discrepancies in CSR tables and listing reports.
 
-
-<img src="./images/Picture1.png" alt="CRV Logo" width="200"/>
-
-
-## Subpages
-
-- [page](page.md)
-- [test/](test/index.md)
-- [test/test](test/test.md)
-- [test/test-1](test/test-1.md)
-
-## Project layout
-
-    .github/workflows   # The GitHub Actions automation.
-    mkdocs.yml          # The configuration file.
-    docs/
-        index.md        # The documentation homepage.
-        ...             # Other markdown pages, images and other files.
-
+<img src="./images/Picture1.png" alt="CRV Logo" width="400"/>
 
 
 ## Purpose / Short Description of CRV
@@ -132,7 +114,7 @@ A report is considered having an undefined title if TITLE1 is missing or contain
 
 Sample Detail check for reports with undefined titles:
 
-![](image/Picture4.png)
+<img src="./images/Picture4.png)
 
 ### CHECK2:
 
@@ -511,3 +493,21 @@ Following report indicates three separate duplicate records in the AE listing. 
 Clicking on the report name on the last line will display the actual report.
 
 ![](image/Picture29.png)
+
+
+
+## Subpages
+
+- [page](page.md)
+- [test/](test/index.md)
+- [test/test](test/test.md)
+- [test/test-1](test/test-1.md)
+
+## Project layout
+
+    .github/workflows   # The GitHub Actions automation.
+    mkdocs.yml          # The configuration file.
+    docs/
+        index.md        # The documentation homepage.
+        ...             # Other markdown pages, images and other files.
+
