@@ -36,8 +36,4 @@ nav:
   - Check:
     - Check1: 
         - Intro: check1.md
-    
-extra_css:
-  - assets/css/style.css
-extra_javascript:
-  - assets/js/mermaid.min.js
+   
