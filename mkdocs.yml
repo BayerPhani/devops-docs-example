@@ -1,39 +1,10 @@
-# Project information
-site_name: CRV Documentation
-site_description: CRV Documentation
-site_author: Iraj Mohebalian 
-site_url: https://docs.int.bayer.com/crv/
-copyright: Bayer
-
-# Repository
-repo_name: bayer-int/crv
-repo_url: https://docs.int.bayer.com/crv/
-edit_uri: edit/master/docs
-
-# Configuration
+site_name: Example via GitHub Actions
 theme:
-  name: material
+  name: 'material'
+  palette:
+    primary: grey
 
-# Extensions
-markdown_extensions:
-  - admonition
-  - codehilite
-  - footnotes
-  - extra
-  - pymdownx.magiclink
-  - pymdownx.caret
-  - pymdownx.tilde
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_div_format
-
-# Page tree
-nav:
-  - Introduction: index.md
-  - Training Material: trainings.md
-  - Check:
-    - Check1: 
-        - Intro: check1.md
-   
+plugins:
+  - search:
+  - git-revision-date-localized:
+      fallback_to_build_date: true
