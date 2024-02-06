@@ -1,16 +1,4 @@
----
-title: "Document"
-author: "Phanikumar S Tata"
-editor: visual
-toc-location: left
-format:
-  html: 
-    code-fold: true
-    toc: true
-    toc-depth: 3
----
-
- # CRV Check for discrepancies in CSR tables and listing reports.
+# CRV Check for discrepancies in CSR tables and listing reports.
 
 <img src="./images/Picture1.png" alt="CRV Logo" width="400"/>
 
