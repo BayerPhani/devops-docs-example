@@ -15,7 +15,7 @@ homepage = "https://docs.int.bayer.com/-/devops-docs-example/"
 [tool.poetry.dependencies]
 python = "^3.10"
 mkdocs = "^1.5.3"
-mkdocs-material = "^9.5.3"
+mkdocs-material = "^9.5.15"
 mkdocs-git-revision-date-localized-plugin = "^1.2"
 
 [build.system]
